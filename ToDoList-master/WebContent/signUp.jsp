@@ -8,6 +8,13 @@
 <title>Sign Up</title>
 </head>
 <body  style="text-align:center" >
+<nav class="navbar navbar-expand-md navbar-dark"
+			style="background-color: #6abadeba">
+			<div>
+				<a class="navbar-brand"> Professors Quizz Planner </a>
+			</div>
+
+		</nav>
 <!-- page where a user can register. -->
 	<c:choose>
 	    <c:when test="${not empty userEmail}">

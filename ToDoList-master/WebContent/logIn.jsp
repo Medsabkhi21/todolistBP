@@ -2,19 +2,26 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html  style="text-align:center  ;">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>log In</title>
 </head>
 <body  style="text-align:center" >
+	<nav class="navbar navbar-expand-md navbar-dark"
+			style="background-color: #6abadeba">
+			<div>
+				<a class="navbar-brand"> Professors Quizz Planner </a>
+			</div>
+
+		</nav>
 	<c:choose>
 	    <c:when test="${not empty userEmail}">
 	    	<br>
 	    	<h4 style="color:red;">User logged In already.</h4>
 	    	<h4 style="color:red;">
 	    		go to : 
-	    		<a href="homePage.jsp">home page</a>
+	    		<a href="homePage.jsp">Home page</a>
 	    	</h4>
 	    </c:when>
 	    <c:otherwise>
